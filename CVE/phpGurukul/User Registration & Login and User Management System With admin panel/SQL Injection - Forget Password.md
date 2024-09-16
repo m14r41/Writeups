@@ -14,17 +14,29 @@ SQL Injection was found in the `/password-recovery.php` page of the PHPGurukul U
 ## Steps to Reproduce:
 
 
-Step 1: Select `Already Register` to login
+**Step 1:** Select `Already Register` to login
 
-Step 2: Click on `Forgot Password`.
+![image](https://github.com/user-attachments/assets/9b76b6b3-2b9f-47f6-94f6-89bebb3cd2a6)
 
-Step 3: Provide any email in `Email address` field and click on `Reset Password` Enable intercept in brupsuite to capture the request.
+**Step 2:** Click on `Forgot Password`.
 
-Step 4: Copy the all request and save in a file. ( Here name is given password-recovery)
+![image](https://github.com/user-attachments/assets/c7086c85-24d4-410d-b9dc-7143cc57f405)
 
-Step 5: Now run  `sqlmap` command `python.exe C:\sqlmap\sqlmap.py -r password-recovery.txt --batch --dbs --flush-session`as shown in screenshot.
+**Step 3: **Provide any email in `Email address` field and click on `Reset Password` Enable intercept in brupsuite to capture the request.
 
-Step 6: Now notice that `femail` parameter is vulnerable and database is retrived
+![image](https://github.com/user-attachments/assets/ae1c811b-c9dc-4d77-805e-08b22ed40a36)
+
+**Step 4:** Copy the request and save in a file. ( Here name is given password-recovery)
+
+![image](https://github.com/user-attachments/assets/6d5ea0f5-8b2d-409f-b891-4be39825d116)
+
+**Step 5:** Now run  `sqlmap` command `python.exe C:\sqlmap\sqlmap.py -r password-recovery.txt --batch --dbs --flush-session`as shown in screenshot.
+
+![image](https://github.com/user-attachments/assets/ddd7ada5-c993-4a7e-b88b-83a515120fee)
+
+**Step 6:** Now notice that `femail` parameter is vulnerable and database is retrived
+
+![image](https://github.com/user-attachments/assets/57ca6ee5-fd3c-4775-9af4-ae82c1054346)
 
 ## Mitigation/recommendations
 
