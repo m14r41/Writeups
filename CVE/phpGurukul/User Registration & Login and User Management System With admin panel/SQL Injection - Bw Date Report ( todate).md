@@ -13,19 +13,25 @@ SQL Injection was found in the `/bwdates-report-result.php` page of the PHPGuruk
 ## Steps to Reproduce:
 
 
-Step 1: Click on `Admin Pannel` to login as admin
+**Step 1**: Click on `Admin Pannel` to login as admin
 
-Step 2: Clikc on `B/w Date Report`.
+![image](https://github.com/user-attachments/assets/a44a8c21-f23b-4795-9cce-7ec150d43141)
 
-Step 3: Select the `From Date` and `To Date`, Enable intercept in burpsuite to cpature the request and click on `Submit`
+**Step 2:** Clikc on `B/w Date Report` and Select the `From Date` and `To Date`, Enable intercept in burpsuite to cpature the request and click on `Submit`
 
-Step 4: Copy the request request and save in a file. ( Here name is given `report-result ( todate - param).txt`)
+![image](https://github.com/user-attachments/assets/ba3606d6-4be8-47db-affd-059237620cd2)
 
-Step 5: Now run  `sqlmap` command `python.exe C:\sqlmap\sqlmap.py -r "report-result ( todate - param).txt" -p todate --batch --current-db --flush-session`, and observer POST parameter `todate` is vulnerable
+**Step 3:** Copy the request request and save in a file. ( Here name is given `report-result ( todate - param).txt`)
+![image](https://github.com/user-attachments/assets/1ec80a8a-34cb-457f-aad3-f28d86c4ef58)
 
-Step 6: `searchkey` parameter is vulnerable with `time-based blind` and `UNION` Type SQL Injection. Current database is retrived sucessfully.
+**Step 4:** Now run  `sqlmap` command `python.exe C:\sqlmap\sqlmap.py -r "report-result ( todate - param).txt" -p todate --batch --current-db --flush-session`, and observer POST parameter `todate` is vulnerable
+![image](https://github.com/user-attachments/assets/1c6161b3-4ae8-4f49-9443-8038cc5dc73f)
 
-Step 7: Further more table are also retrived sucessfully for current database `loginsystem`
+**Step 6:** `searchkey` parameter is vulnerable with `time-based blind` and `UNION` Type SQL Injection. Current database is retrived sucessfully.
+![image](https://github.com/user-attachments/assets/9ef9664a-6d91-4b8a-bbe8-fe1e51ab607c)
+
+**Step 7:** Further more table are also retrived sucessfully for current database `loginsystem`
+![image](https://github.com/user-attachments/assets/af73abd2-5c31-477d-acef-ee35ca0d933a)
 
 
 ## Mitigation/recommendations
