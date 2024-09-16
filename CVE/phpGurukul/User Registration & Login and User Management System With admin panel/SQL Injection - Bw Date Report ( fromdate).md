@@ -14,19 +14,33 @@ SQL Injection was found in the `/search-result.php` page of the PHPGurukul User 
 ## Steps to Reproduce:
 
 
-Step 1: Click on `Admin Pannel` to login as admin
+**Step 1:** Click on `Admin Pannel` to login as admin
 
-Step 2: Provide admin credential and click on `login`
+![image](https://github.com/user-attachments/assets/58d0eaa7-363d-4f6c-bf43-e9ce8b45185a)
 
-Step 3: Clikc on `B/w Date Report`. Select the `From Date` and `To Date`, Enable intercept in burpsuite to cpature the request and click on `Submit`
+**Step 2:** Provide admin credential and click on `login`
 
-Step 4: Copy the request request and save in a file. ( Here name is given `report-result ( todate - param).txt`)
+![image](https://github.com/user-attachments/assets/cde9986d-bb69-4187-8cec-9fd479ffa578)
 
-Step 5: Now run  `sqlmap` command `python.exe C:\sqlmap\sqlmap.py -r reports-result.txt -p fromdate --batch --current-db --flush-session`, and observer POST parameter `fromdate` is vulnerable.
+**Step 3:** Clikc on `B/w Date Report`. Select the `From Date` and `To Date`, Enable intercept in burpsuite to cpature the request and click on `Submit`
 
-Step 6: `searchkey` parameter is vulnerable with `time-based blind` Type SQL Injection. Current database is retrived sucessfully.
+![image](https://github.com/user-attachments/assets/a257209a-7f1a-47d5-9089-8b152d39b23d)
 
-Step 7: Further more table are also retrived sucessfully for current database `loginsystem`
+**Step 4:** Copy the request request and save in a file. ( Here name is given `report-result ( todate - param).txt`)
+
+![image](https://github.com/user-attachments/assets/24ae0998-11db-4236-8a82-db822b6e9fe8)
+
+**Step 5:** Now run  `sqlmap` command and also specify the parameter `python.exe C:\sqlmap\sqlmap.py -r reports-result.txt -p fromdate --batch --current-db --flush-session`, and observer POST parameter `fromdate` is vulnerable.
+
+![image](https://github.com/user-attachments/assets/36751068-24c0-42bf-8ed2-eed31c4cdf25)
+
+**Step 6:** `fromdate` parameter is vulnerable with `time-based blind` Type SQL Injection. Current database is retrived sucessfully.
+
+![image](https://github.com/user-attachments/assets/15054fac-90c2-4a58-a78e-e09d1c7ff595)
+
+**Step 7:** Further more table are also retrived sucessfully for current database `loginsystem`
+
+![image](https://github.com/user-attachments/assets/22f9d01c-369f-4600-87fb-525d56d8ccd7)
 
 
 ## Mitigation/recommendations
