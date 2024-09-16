@@ -13,17 +13,23 @@ Reflected Cross-Site Scripting (XSS) vulnerability was found in the `/search-res
 
 ## Steps to Reproduce:
 
-> How to produce vulnerability
+**Step 1**: Click on Adming login
+![image](https://github.com/user-attachments/assets/a03c927d-6531-4d58-ba04-1dc4485f20ff)
 
-Step 1: Click on Adming login
+**Step 2:** Provide Admin credential to login
+![image](https://github.com/user-attachments/assets/0acd5300-e785-4b88-8dcf-5a64e8b571a4)
 
-Step 2: Provide Admin credential to login
 
-Step 3: In search bar, provide values `<script>alert(1)</script>` and enable burpsuite to confirm the parameter.
+**Step 3:** In search bar, provide values `<script>alert(1)</script>` and enable burpsuite to confirm the parameter.
+![image](https://github.com/user-attachments/assets/7477b21c-3cdc-42e1-a8e8-60c08e958d79)
 
-Step 4: Just notice that payload is `searchkey` parameter, Now forward the request
+**Step 4:** Just notice that payload is `searchkey` parameter, Now forward the request
 
-Step 5: As request is forwarded notice in the browser, Payload is executed with popup.
+![image](https://github.com/user-attachments/assets/06d5c1f7-0045-4c4c-b48c-4f80c050abe7)
+
+**Step 5:** As request is forwarded notice in the browser, Payload is executed with popup.
+
+![image](https://github.com/user-attachments/assets/f6747319-27f7-41db-b4a7-a186cb9cfaec)
 
 
 ## Mitigation/recommendations
