@@ -13,8 +13,6 @@ Stored Cross-Site Scripting (XSS) vulnerability by CSRF was found in the `profil
 
 ## Steps to Reproduce:
 
-> How to produce vulnerability
-
 Step 1: Login into application as normal user.
 
 Step 2: Navigate to Profile page.
