@@ -13,7 +13,7 @@ HTML Injection vulnerability was found in the `/search-result.php` page of the P
 
 ## Steps to Reproduce:
 
-**Step 1:** Click on Adming login
+**Step 1:** Click on Admin login
 
 ![image](https://github.com/user-attachments/assets/cb9d4284-a525-4f11-af9b-ce36d6d42fda)
 
@@ -25,11 +25,11 @@ HTML Injection vulnerability was found in the `/search-result.php` page of the P
 
 ![image](https://github.com/user-attachments/assets/2bb4de79-bbea-4135-b223-e1f339106541)
 
-**Step 4:** Just notice that payload is `searchkey` parameter, Now forward the request
+**Step 4:** Just notice that the payload is `searchkey` parameter, Now forward the request
 
 ![image](https://github.com/user-attachments/assets/85bae8be-244a-43aa-867a-93e02112fba6)
 
-**Step 5:** As request is forwarded notice in the browser, HTML Payload is executed.
+**Step 5:** As the request is forwarded notice in the browser, HTML Payload is executed.
 
 ![image](https://github.com/user-attachments/assets/ee44be97-a9da-4b8e-a3bd-2170cf03b97d)
 
