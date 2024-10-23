@@ -1,6 +1,6 @@
 ## Vulnerability Description
 
-Directory listings is found in the PHPGurukul User Registration & Login and User Management System V3.2. This vulnerability allows remote attackers attacker to access sensitive file and directories via http://localhost/loginsystem/assets URL.
+Directory listing is found in the PHPGurukul User Registration & Login and User Management System V3.2. This vulnerability allows remote attackers attacker to access sensitive file and directories via http://localhost/loginsystem/assets URL.
 
 
 | **Field**                        | **Details**                                                                                                                                                                                |
