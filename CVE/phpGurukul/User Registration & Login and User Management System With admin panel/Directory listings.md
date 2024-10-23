@@ -8,7 +8,7 @@ Directory listing is found in the PHPGurukul User Registration & Login and User 
 | **Affected Vendor**              | [PHPGurukul](https://phpgurukul.com/)                                                                                                                                                      |
 | **Affected Product Name**        | User Registration & Login and User Management System With admin panel                                                                                                                      |
 | **Product Official Website URL** | [https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/](https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/) |
-| **Affected Components**   <br>       | - **Version:** -  V 3.2 <br> - **Affected Directory:** /assets <br> - **Method:** POST                                                                           |
+| **Affected Components**   <br>       | - **Version:** -  V 3.2 <br> - **Affected Directory:** /loginsystem/assets <br> - **Method:** POST                                                                           |
 
 
 ## Steps to Reproduce:
