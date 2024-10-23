@@ -8,7 +8,7 @@ Stored Cross-Site Scripting (XSS) vulnerability by CSRF was found in the `profil
 | **Affected Vendor**              | [PHPGurukul](https://phpgurukul.com/)                                                                                                                                                      |
 | **Affected Product Name**        | User Registration & Login and User Management System With admin panel                                                                                                                      |
 | **Product Official Website URL** | [https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/](https://phpgurukul.com/user-registration-login-and-user-management-system-with-admin-panel/) |
-| **Affected Components**          | - **Version:** -  V 3.2 <br>- **Affected Code File:**/profile.php <br>- **Affected Parameter:** fname, lname<br>- **Method:** POST                                                                           |
+| **Affected Components**          | - **Version:** -  V 3.2 <br>- **Affected Code File:**/loginsystem/profile.php <br>- **Affected Parameter:** fname, lname<br>- **Method:** POST                                                                           |
 
 
 ## Steps to Reproduce:
