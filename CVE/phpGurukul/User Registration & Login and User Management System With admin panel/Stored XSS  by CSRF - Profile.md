@@ -1,6 +1,6 @@
 ## Vulnerability Description
 
-Stored Cross-Site Scripting (XSS) vulnerability by CSRF was found in the `profile.php` page of the PHPGurukul User Registration & Login and User Management System V3.2. This vulnerability allows remote attackers to execute arbitrary scripts via the CSRF attack in /http://localhost/loginsystem/profile.php URL.
+Stored Cross-Site Scripting (XSS) vulnerability by CSRF was found in the `profile.php` page of the PHPGurukul User Registration & Login and User Management System V3.2. This vulnerability allows remote attackers to execute arbitrary scripts via the CSRF attack in /loginsystem/profile.php URL.
 
 
 | **Field**                        | **Details**                                                                                                                                                                                |
