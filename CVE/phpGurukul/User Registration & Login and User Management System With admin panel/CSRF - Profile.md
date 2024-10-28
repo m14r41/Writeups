@@ -14,7 +14,7 @@ CSRF vulnerability was found in the `profile` page of the PHPGurukul User Regist
 ## Steps to Reproduce:
 
 
-**Step 1:**Login with user first. ( 1st user created `test@gmail.com`). Navigate th Profle page and click on `edit`
+**Step 1:** Login with user first. ( 1st user created `test@gmail.com`). Navigate th Profle page and click on `edit`
 
 ![image](https://github.com/user-attachments/assets/18c1f7c3-edef-4ea3-a53d-4b23792a9fb5)
 
