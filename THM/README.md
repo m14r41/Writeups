@@ -1,4 +1,5 @@
-# Writups
+# This repo is forked from 
+> https://github.com/JoshGH11/tryhackme-free-rooms
 
 
 # TryHackMe Free Rooms( _they cost $0.00000_ )
